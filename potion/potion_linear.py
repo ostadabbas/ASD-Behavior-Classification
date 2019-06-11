@@ -102,19 +102,6 @@ def joint_im(im_size, ksize, kernel, fr_no=None, keyps=None, joint_name=None, jo
     return joint_im
     
 
-
-def PF(kps):
-    keyps = np.zeros((len(kps), 4, 17))
-    for k in range(len(kps)):
-        if kps[k]!=[]:
-            keyps[k] = kps[k][0]
-    #keyps = particle_filter(keyps)
-    for k in range(len(kps)):
-        kps[k][0] = keyps[k]
-    return kps
-
-
-
 def Interpolation(kps):
     keyps = np.zeros((len(kps), 4, 17))
     for k in range(len(kps)):
@@ -167,7 +154,6 @@ def Interpolation(kps):
 
 def getBackground(ch, img_size):
     return np.zeros((ch, img_size[0], img_size[1]))
-    
     
     
 def PoTion(in_pose, original_size, img_size=(height, width), ch=3, sigma=2, scale=1):
