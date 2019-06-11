@@ -39,7 +39,7 @@ def parse_args():
 def CNNModel():
     classification_model = Sequential()
     input_shape = (256,256,3)
-    classification_model.add(Conv2D(64, (5, 5), input_shape=input_shape))
+    classification_model.add(Conv2D(64, (3, 3), input_shape=input_shape))
     classification_model.add(Activation('relu'))
     classification_model.add(MaxPooling2D(pool_size=(2, 2)))
 
