@@ -38,7 +38,7 @@ test_generator = test_datagen.flow_from_directory(
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Get Metrics')
+    parser = argparse.ArgumentParser(description='Prediction')
     parser.add_argument(
         '--e', '-e', dest='e', required=True,
         help='1-5')
