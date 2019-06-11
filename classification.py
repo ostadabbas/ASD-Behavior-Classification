@@ -10,9 +10,9 @@ def training(tool_file):
         subprocess.call(cmd, shell=True) 
 
 def testing(tool_file):
-    e=6
-    cmd = '''python {tool_file} --e {e}'''.format(tool_file=tool_file,e=e)
-    subprocess.call(cmd, shell=True)
+    for e in range(1,6):
+        cmd = '''python {tool_file} --e {e}'''.format(tool_file=tool_file,e=e)
+        subprocess.call(cmd, shell=True)
   
 def main(mode):
     if mode=='train':
