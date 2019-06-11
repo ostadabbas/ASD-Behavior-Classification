@@ -54,15 +54,15 @@ def colorize(im, total_fr, fr_no, joint):
     im_colorized = im
     intensity = 1 + 1.*fr_no/total_fr
     if joint==0:
-        oc_t = [1,0,0]
+        oc_t = [1,0.1,0.1]
         for i in range(n_ch):
             im_colorized[i, :, :] = im[i, :, :] * oc_t[i] * intensity
     elif joint==1:
-        oc_t = [0,1,0]
+        oc_t = [0.1,1,0.1]
         for i in range(n_ch):
             im_colorized[i, :, :] = im[i, :, :] * oc_t[i] * intensity
     else:
-        oc_t = [0,0,1]
+        oc_t = [0.1,0.1,1]
         for i in range(n_ch):
             im_colorized[i, :, :] = im[i, :, :] * oc_t[i] * intensity
     return im_colorized, oc_t
@@ -300,6 +300,8 @@ def PoTion(in_pose, original_size, img_size=(height, width), ch=3, sigma=2, scal
     if np.sum(pose_mo) <= eps:
         return None
     else:
+        pose_mo = np.ones((pose_mo.shape)) + np.random.rand(height, width, ch) + pose_mo
+        pose_mo[pose_mo>255] = 255
         return pose_mo
 
 
@@ -335,8 +337,8 @@ def write_data(labels_file_path, data_path):
 
 training_labels_path = 'train_label.txt'
 testing_labels_path = 'test_label.txt'
-training_data_path = 'potion_data/train/'
-testing_data_path = 'potion_data/test/'
+training_data_path = 'potion_data_v3/train/'
+testing_data_path = 'potion_data_v3/test/'
 
 write_data(training_labels_path, training_data_path)
 write_data(testing_labels_path, testing_data_path)
