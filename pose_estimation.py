@@ -12,7 +12,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Perform pose estimation of set1-set4 videos')
     parser.add_argument(
         '--s', '-s', dest='s', required=True,
-        help='set1/set2/set3')
+        help='set1/set2/set3/set4')
     return parser.parse_args()
 
 
