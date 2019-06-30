@@ -76,9 +76,14 @@ This will install Caffe2. Once Caffe2 is installed, you can run Pose_Estimation.
 - Install [Tensorflow] (https://www.tensorflow.org/install)
 There are three different types of PoTios one can use. 
 
-
+1. PoTion: If the pose-estimation results are good and all required keypoints are obtained, one can run PoTion.py to run the normal poTion program.
+2. PoTion + Linear Interpolation: If the results have 10% keypoints missing, one can use poTion_Linear.py file to implement linear interpolation and then apply PoTion algorithm.
+3. PoTion + Particle Filter: With more than 10% missing keypoints, one can use poTion with particle filter using the file potion_pf.py.
 
 ### 5. Classification ###
+
+Once The results of Potion are obtained, the PoTion images could be used to run potion/potion_data/Classification.py
+
 
 ### Citation ###
 
