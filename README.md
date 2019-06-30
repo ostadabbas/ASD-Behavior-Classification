@@ -54,7 +54,7 @@ Your tagged video dataset should be kept in a folder separately and should make 
 
 - Install [Caffe2] (https://caffe2.ai/docs/getting-started.html?platform=ubuntu&configuration=compile) or follow these instructions:
 
-'''
+```
 $ cd ..
 $ git clone --recursive https://github.com/caffe2/caffe2.git && cd caffe2
 $ git submodule update --init
@@ -68,7 +68,7 @@ $ cmake \
 	-DCMAKE_THREAD_LIBS_INIT=$CONDA_ENV_PATH/lib ..
 $ make -j32
 $ make install -j32  # This installs into the environmen
-'''
+```
 This will install Caffe2. Once Caffe2 is installed, you can run Pose_Estimation.py.
 
 ### 4. PoTion ###
