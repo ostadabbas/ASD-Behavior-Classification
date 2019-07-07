@@ -38,8 +38,6 @@ Install [python 2.7] (https://www.python.org/downloads/)
 For pose estimation the requirement file is requirement_caffe.txt. 
 Please create a conda enviornment using this file which contains all the necessary libraries and dependencies. Once you create the enviornment, you can follow the instructions provided in pose estimation section.
 
-Once Enviornment is setup, next thing to be done is to install [Detect and Track Code] (https://github.com/facebookresearch/DetectAndTrack). Please follow the instruction as informed there to install the algorithm code. 
-Next please replace the tools/test_on_single_video.py from our directory to the Detect and Track Tools/test_on_single_video.py. copy all the otehr files from our directory to Detec and Track home directory.
 
 * Preparing for PoTion and Classification
 
@@ -70,7 +68,10 @@ $ cmake \
 $ make -j32
 $ make install -j32  # This installs into the environmen
 ```
-This will install Caffe2. Once Caffe2 is installed, you can run Pose_Estimation.py.
+This will install Caffe2. Once Caffe2 is installed,  next thing to be done is to install [Detect and Track Code] (https://github.com/facebookresearch/DetectAndTrack). Please follow the instruction as informed there to install the algorithm code. 
+Next please replace the tools/test_on_single_video.py from our directory to the Detect and Track Tools/test_on_single_video.py. copy all the otehr files from our directory to Detec and Track home directory.
+
+You can run Pose_Estimation.py.
 
 ### 4. PoTion ###
 
