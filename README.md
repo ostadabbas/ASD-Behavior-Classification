@@ -32,13 +32,14 @@ The requirements to run all the algorithms provided in this paper include python
 
 Please follow the steps in order to prepare the enviornments.
 
-
-
 * Preparing for Pose Estimation
 
 Install [python 2.7] (https://www.python.org/downloads/)
 For pose estimation the requirement file is requirement_caffe.txt. 
 Please create a conda enviornment using this file which contains all the necessary libraries and dependencies. Once you create the enviornment, you can follow the instructions provided in pose estimation section.
+
+Once Enviornment is setup, next thing to be done is to install [Detect and Track Code] (https://github.com/facebookresearch/DetectAndTrack). Please follow the instruction as informed there to install the algorithm code. 
+Next please replace the tools/test_on_single_video.py from our directory to the Detect and Track Tools/test_on_single_video.py. copy all the otehr files from our directory to Detec and Track home directory.
 
 * Preparing for PoTion and Classification
 
@@ -90,6 +91,8 @@ Once The results of Potion are obtained, the PoTion images could be used to run 
 ### Lisence ###
 
 ### Acknowledgements ###
+
+The code was built upon an initial version of the [Detect and Track](https://github.com/facebookresearch/DetectAndTrack) code base. Many thanks to the original authors for making their code available!
 
 
 
