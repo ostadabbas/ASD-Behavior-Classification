@@ -1,11 +1,13 @@
 # README #
 
 This is the code for the following paper:
-K. Vyas, R. Ma, B. Rezaei, S. Liu, T. Ploetz, R. Oberleitner and S. Ostadabbas, “Recognition of Atypical Behavior in Autism Diagnosis from Video using Pose Estimation Over Time,” IEEE International Workshop on Machine Learning for Signal Processing (MLSP’19), October 13-16, 2019, Pittsburgh, PA, USA. 
+
+Kathan Vyas, Rui Ma, Behnaz Rezaei, Shuangjun Liu, Thomas Ploetz, Ronald Oberleitner and Sarah Ostadabbas, “Recognition of Atypical Behavior in Autism Diagnosis from Video using Pose Estimation Over Time,” IEEE International Workshop on Machine Learning for Signal Processing (MLSP’19), October 13-16, 2019, Pittsburgh, PA, USA. 
 
 
 Contact: 
 [Kathan Vyas](vyas.k@husky.neu.edu)
+
 [Sarah Ostadabbas](ostadabbas@ece.neu.edu)
 
 ### Contents ###
