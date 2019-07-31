@@ -1,14 +1,12 @@
 # README #
 
 This is the code for the following paper:
-"Recognition of Atypical Behavior in Autism Diagnosis from Videos using Pose Estimation over Time"
+K. Vyas, R. Ma, B. Rezaei, S. Liu, T. Ploetz, R. Oberleitner and S. Ostadabbas, “Recognition of Atypical Behavior in Autism Diagnosis from Video using Pose Estimation Over Time,” IEEE International Workshop on Machine Learning for Signal Processing (MLSP’19), October 13-16, 2019, Pittsburgh, PA, USA. 
 
-Check the Project on the page:
-PAGE URL
 
 Contact: 
 [Kathan Vyas](vyas.k@husky.neu.edu)
-[Rui MA](ma.rui@husky.neu.edu)
+[Sarah Ostadabbas](ostadabbas@ece.neu.edu)
 
 ### Contents ###
 
@@ -87,9 +85,22 @@ There are three different types of PoTios one can use.
 Once The results of Potion are obtained, the PoTion images could be used to run potion/potion_data/Classification.py
 
 
-### Citation ###
+## Citation 
+If you found our work useful in your research, please consider citing our paper:
 
-### Lisence ###
+```
+@article{vya2019recognition,
+  title={Recognition of Atypical Behavior in Autism Diagnosis from Video using Pose Estimation Over Time},
+  author={Kathan Vyas, Rui Ma, Behnaz Rezaei, Shuangjun Liu, Thomas Ploetz, Ronald Oberleitner and Sarah Ostadabbas},
+  journal={IEEE International Workshop on Machine Learning for Signal Processing (MLSP’19), October 13-16, 2019, Pittsburgh, PA, USA.},
+  year={2019}
+}
+```
+
+
+## License 
+* This code is for non-commertial purpose only. For other uses please contact ACLab of NEU. 
+* No maintainence survice 
 
 ### Acknowledgements ###
 
